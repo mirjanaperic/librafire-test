@@ -1,0 +1,54 @@
+.showcase {
+    background-image: url('../../images/showcase-img.png');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    color: $main_text_color;
+    height: 100vh;
+}
+.cover-div {
+    padding-bottom: 50%;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: gradient(linear, left top, right bottom, color-stop(50%, $secondary_color_opacity), color-stop(50%, $main_color_opacity));
+    background: linear-gradient(to top right, $secondary_color_opacity 50%, $main_color_opacity 50%);
+}
+.showcase-content {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn--showcase {
+    float: right;
+    margin: 50px 0;
+}
+.showcase__heading {
+    margin-bottom: -20px;
+}
+.showcase-info {
+    position: absolute; 
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-email {
+    font-family: $secondary_font;
+}
+.address {
+    text-transform: uppercase;
+    font-family: $secondary_font;
+    margin-bottom: 20px;
+}
+// Showcase arrow
+.arrow-down {
+    border: solid $main_text_color;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(45deg);
+    margin-top: 40px;
+  }

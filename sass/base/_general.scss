@@ -2,7 +2,35 @@
     outline: none;
 }
 html {
-    font-size: 14px;
-}
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  
 @include main; 
 
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+
+    // @media only screen and(max-width: 1450px) {
+    //     max-width: 1200px;
+    // }
+    // @media only screen and(max-width: 1200px) {
+    //     max-width: 960px;
+    //     padding: 20px;
+    // }
+    // @media only screen and(max-width: 960px) {
+    //     max-width: 800px;
+    // }
+    // @media only screen and(max-width: 768px) {
+    //     padding: 10px;
+    // }
+}
+
+a {
+    cursor: pointer;
+}

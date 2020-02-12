@@ -1,14 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harpoon Ventures</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    
+
+    <!-- Showcase -->
+    <section class="showcase">
+        <!-- Container -->
+        <div class="cover-div">
+            <div class="container">
+
+                <!-- Header -->
+                <header class="header">
+                    <button class="btn btn--primary btn--showcase">Login</button>
+                </header>
+                <!--/header-->
+
+                <div class="showcase-content">
+                    <h1 class="showcase__heading">Harpoon Ventures</h1>
+                    <img class="showcase__sign" src="./images/heading-sign.png" alt="heading-sign">
+                </div>
+                <div class="showcase-info">
+                    <p class="contact-email">
+                        partners@harpoon.vc
+                    </p>
+                    <p class="address">
+                        Menlo Park, CA
+                    </p>
+                    <a href="#js-about">
+                        <i class="arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--/container-->
+
+        <!-- Fixed dots navigation -->
+        <div class="fixed">
+            <div class="dots" id="dots">
+                <a class="dot-link active" id="showcase-dot" href="#js-showcase"></a>
+                <a class="dot-link" id="about-dot" href="#js-about"></a>
+                <a class="dot-link" id="portfolio-dot" href="#js-portfolio"></a>
+                <a class="dot-link" id="advisors-dot" href="#js-advisors"></a>
+                <a class="dot-link" id="investors-dot" href="#js-investors"></a>
+            </div>
+        </div>
+        <!--/fixed dots navigation-->
+    </section>
+    <!--/showcase-->
+
+    <!-- About Us -->
+    <section class="about" id="js-about">
+        <!-- Container-special -->
+        <div class="container--special">
+            <h2 class="about__heading">
+                About Us
+            </h2>
+        </div>
+        <!--/container-special-->
+
+        <!-- Horizontal line -->
+        <div class="horizontal-line horizontal-line--about"></div>
+
+        <!-- Container-special -->
+        <div class="container--special flex">
+            <div class="flex__item flex__item--first">
+                <h2 class="about__heading--second">
+                    "Harpoon Ventures is building
+                    <br> a portfolio of top-tier early stage startups."
+                </h2>
+                <p class="about__paragraph">
+                    Harpoon Ventures is building a portfolio of top-tier early stage startups and helping them win them multi-million-dollar
+                    unconventional government contracts in support of elite national security units. Our team brings an unparalleled
+                    combination of top-tier Silicon Valley venture capital experience together with deep domain knowledge
+                    in government, special operations, and intelligence.
+                </p>
+            </div>
+            <div class="flex__item flex__item--second">
+                <div class="boxes">
+                    <div class="box box--1"></div>
+                    <div class="box box--2"></div>
+                    <div class="box box--3"></div>
+                    <div class="box box--4"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /container-special -->
+    </section>
+    <!--/about us-->
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="js-portfolio">
+        <div class="container">
+            <h2 class="portfolio__heading">
+                Our Portfolio
+            </h2>
+        </div>
+        <!-- Horizontal line -->
+        <div class="horizontal-line"></div>
+        <!-- Portfolio inner content -->
+        <div class="portfolio-inner-content">
+            <div class="container">
+                <!-- Cards -->
+                <div class="cards" id="js-cards">
+                    <div class="card">
+                        <img class="card__logo" src="./images/logo2.png" alt="elroy-logo">
+                        <h4 class="card__title">
+                            VTOL autonomous heavy lift drones
+                        </h4>
+                        <p class="card__paragraph">
+                            Next generation autonomous Vertical Takeoff and Landing (VTOL) with payloads in excess of 150 lbs and range in excess of
+                            300 miles.
+                        </p>
+                        <button class="btn">
+                            VIEW MORE
+                        </button>
+                    </div>
+                    <div class="card">
+                        <img class="card__logo" src="./images/logo1.png" alt="elroy-logo">
+                        <h4 class="card__title">
+                            AR comprehensive situational awareness
+                        </h4>
+                        <p class="card__paragraph">
+                            Augmented Reality (AR) enabled common operation picture with customizable AR layers over full motion video feeds.
+                        </p>
+                        <button class="btn">
+                            VIEW MORE
+                        </button>
+                    </div>
+                    <div class="card">
+                        <img class="card__logo" src="./images/logo3.png" alt="elroy-logo">
+                        <h4 class="card__title">
+                            Autonomous drones for underway launch & recovery
+                        </h4>
+                        <p class="card__paragraph">
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        </p>
+                        <button class="btn">
+                            VIEW MORE
+                        </button>
+                    </div>
+                    <div class="card">
+                        <img class="card__logo" src="./images/logo4.png" alt="elroy-logo">
+                        <h4 class="card__title">
+                            Real-time mixed reality training
+                        </h4>
+                        <p class="card__paragraph">
+                            Augmented Reality (AR) multiplayer games and training scenarios enabling users to seamlessly fuse a digital world with the
+                            real world.
+                        </p>
+                        <button class="btn">
+                            VIEW MORE
+                        </button>
+                    </div>
+                </div>
+                <!--/cards-->
+                <h2 class="portfolio__heading portfolio__heading--second">
+                    "This portfolio was constructed in
+                    <br> less than 1 month."
+                </h2>
+            </div>
+        </div>
+        <!--/portfolio inner content-->
+
+
+    </section>
+    <!--/portfolio-->
+
+    <!-- Advisors -->
+    <section class="advisors" id="js-advisors">
+        <!-- Container -->
+        <div class="container">
+            <h2 class="advisors__heading advisors__heading--first">
+                Our Advisors
+            </h2>
+        </div>
+        <!--/container-->
+
+        <!-- Horizontal line -->
+        <div class="horizontal-line"></div>
+
+        <!-- Container -->
+        <div class="container">
+            <h2 class="advisors__heading advisors__heading--second">
+                We are seeking advisors who
+                <br> provide strategic insight...
+            </h2>
+
+            <!-- Advisors boxes -->
+            <div class="advisors-boxes">
+                <div class="advisors-box">
+                    <img class="advisors__img" src="./images/advisors-img1.png" alt="advisors-img">
+                    <div class="text-wrap">
+                        <h4 class="advisors-box__title">
+                            David Petraeus
+                        </h4>
+                        <ul class="advisors__list">
+                            <li class="advisors__list-item">
+                                Former Director of CIA
+                            </li>
+                            <li class="advisors__list-item">
+                                Former Comander of CENTCOM
+                            </li>
+                            <li class="advisors__list-item">
+                                General, US Army, Ret. (4-star)
+                            </li>
+                            <li class="advisors__list-item">
+                                KKR Global Institute Chairman
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advisors-box">
+                    <img class="advisors__img" src="./images/advisors-img2.png" alt="advisors-img">
+                    <div class="text-wrap">
+                        <h4 class="advisors-box__title">
+                            Robert Work
+                        </h4>
+                        <ul class="advisors__list">
+                            <li class="advisors__list-item">
+                                Former Deputy Secretary of Defence
+                            </li>
+                            <li class="advisors__list-item">
+                                Former Undersecretary of the Navy
+                            </li>
+                            <li class="advisors__list-item">
+                                Colonel, US Marine Corps
+                            </li>
+                            <li class="advisors__list-item">
+                                CEO of Center for New American Sec.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advisors-box">
+                    <img class="advisors__img" src="./images/advisors-img3.png" alt="advisors-img">
+                    <div class="text-wrap">
+                        <h4 class="advisors-box__title">
+                            Michael Hayden
+                        </h4>
+                        <ul class="advisors__list">
+                            <li class="advisors__list-item">
+                                Former Director of CIA
+                            </li>
+                            <li class="advisors__list-item">
+                                Former Comander of NSA
+                            </li>
+                            <li class="advisors__list-item">
+                                Former Principal Dep. Dir. For National Intel.
+                            </li>
+                            <li class="advisors__list-item">
+                                General, US Army, Ret. (4-star)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advisors-box">
+                    <img class="advisors__img" src="./images/advisors-img4.png" alt="advisors-img">
+                    <div class="text-wrap">
+                        <h4 class="advisors-box__title">
+                            Tom Mahnken
+                        </h4>
+                        <ul class="advisors__list">
+                            <li class="advisors__list-item">
+                                Former Dep. Assist. Sec. Defense Policy
+                            </li>
+                            <li class="advisors__list-item">
+                                President of Center for Strat. Budget Assess.
+                            </li>
+                            <li class="advisors__list-item">
+                                Captain, US Navy
+                            </li>
+                            <li class="advisors__list-item">
+                                Professor, Johns Hopkins SAIS
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advisors-box">
+                    <img class="advisors__img" src="./images/advisors-img5.png" alt="advisors-img">
+                    <div class="text-wrap">
+                        <h4 class="advisors-box__title">
+                            Michael Hayden
+                        </h4>
+                        <ul class="advisors__list">
+                            <li class="advisors__list-item">
+                                Former Commander of SOCOM
+                            </li>
+                            <li class="advisors__list-item">
+                                Former Comander of JSOC
+                            </li>
+                            <li class="advisors__list-item">
+                                Former Commander of SOCOM
+                            </li>
+                            <li class="advisors__list-item">
+                                General, US Army, Ret. (4-star)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advisors-box advisors-box--special">
+                    <h2 class="advisors__heading advisors__heading--third">...and unparalleled
+                        <br> network leverage.</h2>
+                </div>
+            </div>
+            <!--/advisors boxes-->
+        </div>
+        <!--/container-->
+    </section>
+    <!--/advisors-->
+
+    <!-- Investors -->
+    <section class="investors" id="js-investors">
+        <!-- Container -->
+        <div class="container">
+            <div class="investors-inner-content">
+                <h2 class="investors__heading investors__heading--first">
+                    Our Investors
+                </h2>
+            </div>
+        </div>
+        <!--/container-->
+
+        <!-- Horizontal line -->
+        <div class="horizontal-line"></div>
+        <!-- Container -->
+        <div class="container">
+            <!-- Investors inner content -->
+            <div class="investors-inner-content">
+                <h2 class="investors__heading investors__heading--second">
+                    "Our investors help us source <br> the best companies, and <br> most advanced technologies, <br> in the world."
+                </h2>
+                <p class="investors__paragraph">Confirmed</p>
+                <img class="invesors__img" src="./images/footer-logo1.png" alt="lightspeed-logo">
+                <p class="investors__paragraph">In talks</p>
+                <img class="invesors__img invesors__img--special" src="./images/footer-logo3.png" alt="sequoia-logo">
+                <img class="invesors__img invesors__img--special" src="./images/footer-logo2.png" alt="andreessen-horowitz-logo">
+
+
+            </div><!--/investors inner content-->
+        </div><!--/container-->
+
+    </section>
+    <!--/investors-->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                Copyright Harpoon Ventures 2018. All Rughts Reserved
+            </p>
+        </div>
+    </footer><!--/footer-->
+
+    <script src="script.js"></script>
 </body>
+
 </html>

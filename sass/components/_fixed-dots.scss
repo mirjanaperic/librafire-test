@@ -1,0 +1,41 @@
+// Fixed dots navigation
+.dots {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.dot-link {
+    background-color: $main_text_color;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 20px 0;
+    margin-left: 55px;
+    z-index: 12;
+    display: inline-block;
+    // @media only screen and (max-width: 768px) {
+    //     margin-left: 35px;
+    // }
+} 
+.active {
+    height: 14px;
+    width: 14px;
+    background-color: $secondary_color!important;
+}
+.active-black {
+    background-color: $main_color;
+}
+.active-white {
+    background-color: $main_text_color;
+}
+.fixed {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 50px;
+    top: 23%;
+    z-index: 10;
+}
+

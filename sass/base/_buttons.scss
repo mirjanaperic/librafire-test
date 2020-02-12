@@ -1,0 +1,36 @@
+.btn {
+    border: 2px solid $secondary_color;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    height: 50px;
+    width: 180px;
+    color: $main_text_color;
+    background-color: $main_color;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+
+    &:hover {
+        background-image: linear-gradient(to top right, $secondary_color 100%, $main_color 100%);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: $main_color;
+    }
+    // @media only screen and(max-width: 768px) {
+    //     min-width: 125px;
+    //     max-width: 125px;
+    // }
+}
+
+.btn--primary {
+    background-image: linear-gradient(to top right, $secondary_color 50%, $main_color 50%);
+    background-size: 50%;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-image: linear-gradient(to top right, $secondary_color 100%, $main_color 100%);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: $main_color;
+    }
+}

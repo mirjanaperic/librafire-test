@@ -1,0 +1,29 @@
+.investors {
+    background-image: url('../../images/footer-img.png');
+    padding: 100px 0;
+}
+.investors__heading {
+    color: $main_text_color;
+}
+.investors-inner-content {
+    // width: 60%;
+}
+.investors__paragraph {
+    color: $secondary_color;
+    padding: 25px 0;
+    font-family: $secondary_font;
+    padding-bottom: 10px;
+}
+.investors__heading--second {
+    padding-top: 140px;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+.invesors__img {
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+.invesors__img--special {
+    padding-bottom: 30px;
+}
