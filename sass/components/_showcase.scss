@@ -1,19 +1,23 @@
 .showcase {
-    background-image: url('../../images/showcase-img.png');
+    background-image: url('images/showcase-img.png');
     background-size: cover;
     position: relative;
     width: 100%;
-    padding-bottom: 50%;
     color: $main_text_color;
     height: 100vh;
 }
+.showcase__sign {
+    img {
+        width: 100%;
+        height: auto;   
+    }
+}
 .cover-div {
-    padding-bottom: 50%;
     width: 100%;
     height: 100vh;
     position: absolute;
-    background: gradient(linear, left top, right bottom, color-stop(50%, $secondary_color_opacity), color-stop(50%, $main_color_opacity));
-    background: linear-gradient(to top right, $secondary_color_opacity 50%, $main_color_opacity 50%);
+    background-image: gradient(linear, left top, right bottom, color-stop(50%, $secondary_color_opacity), color-stop(50%, $main_color_opacity));
+    background-image: linear-gradient(to top right, $secondary_color_opacity 50%, $main_color_opacity 50%);
 }
 .showcase-content {
     position: absolute;
@@ -24,9 +28,18 @@
 .btn--showcase {
     float: right;
     margin: 50px 0;
+    @media only screen and(max-width: 600px) {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 .showcase__heading {
     margin-bottom: -20px;
+    @media only screen and(max-width: 960px) {
+        margin-bottom: 0;
+    }
 }
 .showcase-info {
     position: absolute; 
@@ -35,6 +48,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .contact-email {
     font-family: $secondary_font;
 }
@@ -50,5 +64,4 @@
     display: inline-block;
     padding: 7px;
     transform: rotate(45deg);
-    margin-top: 40px;
   }

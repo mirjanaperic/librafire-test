@@ -5,9 +5,13 @@ html {
     /* 1rem = 10px */
     font-size: 62.5%;
     scroll-behavior: smooth;
+    width:100%;
+    overflow-x:hidden;
   }
   body {
     font-size: 1.6rem;
+    width:100%;
+    overflow-x:hidden;
   }
   
 @include main; 
@@ -16,19 +20,54 @@ html {
     margin: 0 auto;
     max-width: 1140px;
 
-    // @media only screen and(max-width: 1450px) {
-    //     max-width: 1200px;
-    // }
-    // @media only screen and(max-width: 1200px) {
-    //     max-width: 960px;
-    //     padding: 20px;
-    // }
-    // @media only screen and(max-width: 960px) {
-    //     max-width: 800px;
-    // }
-    // @media only screen and(max-width: 768px) {
-    //     padding: 10px;
-    // }
+    @media only screen and(max-width: 1200px) {
+        max-width: 1000px;
+    }
+    @media only screen and(max-width: 1100px) {
+        max-width: 800px;
+    }
+    @media only screen and(max-width: 960px) {
+        max-width: 500px;
+    }
+    @media only screen and(max-width: 550px) {
+        max-width: 400px;
+        padding: 0 30px;
+    }
+}
+
+.container--about {
+    max-width: 1150px;
+    margin: 0 auto;
+    @media only screen and(max-width: 1200px) {
+        max-width: 1000px;
+     }
+     @media only screen and(max-width: 1100px) {
+        max-width: 800px;
+    }
+    @media only screen and(max-width: 960px) {
+        max-width: 500px;
+    }
+    @media only screen and(max-width: 550px) {
+        max-width: 400px;
+        padding: 0 30px;
+    }
+ }
+ .container--portfolio {
+    margin: 0 auto;
+    max-width: 1200px;
+    @media only screen and(max-width: 1200px) {
+        max-width: 1000px;
+     }
+     @media only screen and(max-width: 1100px) {
+        max-width: 800px;
+    }
+     @media only screen and(max-width: 960px) {
+        max-width: 500px;
+    }
+    @media only screen and(max-width: 550px) {
+        max-width: 400px;
+        padding: 0 30px;
+    }
 }
 
 a {

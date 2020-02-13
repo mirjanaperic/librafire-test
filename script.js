@@ -13,6 +13,7 @@ console.log(e.target)
     if(e.target.parentElement.parentElement.classList.contains('cards')) {
         e.target.parentElement.classList.add('highlight')
     } 
+
 });
 
 
@@ -20,7 +21,7 @@ console.log(e.target)
 // Change dots color
 window.onscroll = function() {
   scrollPosY = window.scrollY;
-  console.log(scrollPosY); 
+  // console.log(scrollPosY); 
   changeColor();
 }  
 
@@ -33,8 +34,6 @@ for (var i = 0; i < dotLink.length; i++) {
   this.className += " active";
   });
 }
-
-// let element = element.target;
 
 let showcase = document.getElementById("js-showcase");
 var showcaseDot = document.getElementById('showcase-dot');

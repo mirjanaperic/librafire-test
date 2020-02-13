@@ -1,12 +1,9 @@
 .investors {
-    background-image: url('../../images/footer-img.png');
+    background-image: url('images/footer-img.png');
     padding: 100px 0;
 }
 .investors__heading {
     color: $main_text_color;
-}
-.investors-inner-content {
-    // width: 60%;
 }
 .investors__paragraph {
     color: $secondary_color;
@@ -19,11 +16,24 @@
     padding-bottom: 20px;
     line-height: 1;
 }
-
+.investors__logos {
+    display: flex;
+    @media only screen and(max-width: 960px) {
+        display: block;
+     }
+}
 .invesors__img {
     margin-right: 20px;
     padding-bottom: 10px;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 .invesors__img--special {
     padding-bottom: 30px;
+    
+    @media only screen and(max-width: 500px) {
+        padding-bottom: 30px;
+     }
 }
