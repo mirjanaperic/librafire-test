@@ -9,27 +9,41 @@
     background-color: $main_color;
     text-transform: uppercase;
     font-size: 1.8rem;
-
-    &:hover {
-        background-image: linear-gradient(to top right, $secondary_color 50%, $main_color 50%);
-        background-size: 50%;
-        background-repeat: no-repeat;
-    }
-    // @media only screen and(max-width: 768px) {
-    //     min-width: 125px;
-    //     max-width: 125px;
-    // }
+    font-family: $secondary_font;
 }
 
 .btn--primary {
     background-image: linear-gradient(to top right, $secondary_color 50%, $main_color 50%);
     background-size: 50%;
     background-repeat: no-repeat;
+    letter-spacing: 3px;
 
     &:hover {
         background-image: linear-gradient(to top right, $secondary_color 100%, $main_color 100%);
         background-size: 100%;
         background-repeat: no-repeat;
         color: $main_color;
+    }
+}
+
+.btn--secondary {
+    letter-spacing: 2px;
+
+    &:hover {
+        background-image: linear-gradient(to top right, $secondary_color 50%, $main_color 50%);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        animation: .2s changeBtn ease-out;
+    }
+}
+
+@keyframes changeBtn {
+    0% {
+        background-image: linear-gradient(to top right, $secondary_color 0%, $main_color 50%);
+        background-size: 0%;
+    }
+    100% {
+        background-image: linear-gradient(to top right, $secondary_color 50%, $main_color 50%);
+        background-size: 50%;
     }
 }

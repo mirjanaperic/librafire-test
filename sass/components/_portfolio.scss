@@ -5,6 +5,7 @@
 }
 .portfolio__heading {
     padding-top: 100px;
+    letter-spacing: 5px;
 }
 .portfolio-inner-content {
     padding: 100px 0;
@@ -19,9 +20,19 @@
     max-width: 40%;
     min-width: 515px;
     padding: 30px;
+    border: 1px solid transparent;
+    margin-bottom: 40px;
+    @media only screen and(max-width: 600px) {
+       padding: 20px;
+    }
 }
 .card__logo {
     padding-bottom: 10px;
+    min-width: 280px;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 .card__title {
     color: $secondary_color;
@@ -30,7 +41,7 @@
 }
 .card__paragraph {
     font-size: 16px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     line-height: 2;
     @media only screen and(max-width: 550px) {
         font-size: 12px;
@@ -40,9 +51,12 @@
 .portfolio__heading--second {
     text-align: center;
     margin: 0 auto;
+    line-height: 1;
+    letter-spacing: 5px;
+    padding-top: 25px;
 }
 .highlight {
-    border: 1px solid $border_color;
+    border-color: $border_color;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
     background-color: $main_text_color_opacity;
     transition: ease-in-out .7s all;

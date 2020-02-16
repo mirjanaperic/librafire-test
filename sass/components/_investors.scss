@@ -4,20 +4,28 @@
 }
 .investors__heading {
     color: $main_text_color;
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+}
+.heading-line--investors {
+    &:after {
+        bottom: 7px;
+    }
 }
 .investors__paragraph {
     color: $secondary_color;
-    padding: 25px 0;
+    padding: 20px 0;
     font-family: $secondary_font;
     padding-bottom: 10px;
 }
 .investors__heading--second {
-    padding-top: 140px;
+    padding-top: 135px;
     padding-bottom: 20px;
     line-height: 1;
 }
 .investors__logos {
     display: flex;
+    align-items: flex-end;
     @media only screen and(max-width: 960px) {
         display: block;
      }

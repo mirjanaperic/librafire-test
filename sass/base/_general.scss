@@ -5,13 +5,13 @@ html {
     /* 1rem = 10px */
     font-size: 62.5%;
     scroll-behavior: smooth;
-    width:100%;
-    overflow-x:hidden;
+    width: 100%;
+    overflow-x: hidden;
   }
   body {
     font-size: 1.6rem;
-    width:100%;
-    overflow-x:hidden;
+    width: 100%;
+    overflow-x: hidden;
   }
   
 @include main; 
@@ -30,7 +30,7 @@ html {
         max-width: 500px;
     }
     @media only screen and(max-width: 550px) {
-        max-width: 400px;
+        max-width: 450px;
         padding: 0 30px;
     }
 }
@@ -48,7 +48,7 @@ html {
         max-width: 500px;
     }
     @media only screen and(max-width: 550px) {
-        max-width: 400px;
+        max-width: 450px;
         padding: 0 30px;
     }
  }
@@ -65,11 +65,22 @@ html {
         max-width: 500px;
     }
     @media only screen and(max-width: 550px) {
-        max-width: 400px;
+        max-width: 450px;
         padding: 0 30px;
     }
 }
 
-a {
-    cursor: pointer;
+.heading-line {
+    position: relative;
+    display: inline-block;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        width: 100vh;
+        height: 4px;
+        background-color: $secondary_color;
+    }
 }

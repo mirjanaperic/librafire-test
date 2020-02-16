@@ -11,14 +11,14 @@
     border-radius: 50%;
     height: 10px;
     width: 10px;
-    margin: 20px 0;
+    margin: 18.4px 0;
     margin-left: 55px;
     z-index: 12;
     display: inline-block;
 } 
 .active {
-    height: 14px;
-    width: 14px;
+    height: 10px;
+    width: 10px;
     background-color: $secondary_color!important;
 }
 .active-black {
@@ -32,7 +32,7 @@
     justify-content: flex-end;
     position: fixed;
     right: 50px;
-    top: 23%;
+    top: 27.5%;
     z-index: 10;
     @media only screen and (max-width: 768px) {
         right: 35px;

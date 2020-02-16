@@ -1,0 +1,61 @@
+.login-modal {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 40vw;
+    height: 40vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    z-index: 9999;
+    transition: 1s ease all;
+    border: 4px solid $secondary_color;
+    @media only screen and(max-width: 640px) {
+        width: 60vw;
+     }
+}
+
+.login-modal-inner {
+    background-color: $main_text_color;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: $secondary_text_color;
+}
+
+.login-modal-inner {
+    position: relative;
+}
+.login-modal__input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: $secondary_text_color;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    ::placeholder {
+        color: $secondary_text_color;
+    }
+}
+.login-modal__btn {
+    height: 30px;
+    width: 110px;
+    font-size: 1.7rem;
+    margin-top: 20px
+}
+.login-modal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+.login-active {
+    opacity: 1;
+}
+

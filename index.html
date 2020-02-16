@@ -14,7 +14,7 @@
 <body>
 
     <!-- Showcase -->
-    <section class="showcase">
+    <section class="showcase" id="js-showcase">
 
         <!-- Container -->
         <div class="cover-div">
@@ -22,9 +22,30 @@
 
                 <!-- Header -->
                 <header class="header">
-                    <button type="button" class="btn btn--primary btn--showcase">Login</button>
+                    <button type="button" class="btn btn--primary btn--showcase" id="js-login-btn">Login</button>
                 </header>
                 <!--/header-->
+
+                <!-- Login modal -->
+                <div class="login-modal" id="js-login-modal">
+                    <div class="login-modal-inner">
+                        <form class="form" action="submit">
+                            <div class="login-modal__item">
+                                <input class="login-modal__input" type="email" placeholder="Your e-mail: ">
+                            </div>
+                            <div class="login-modal__item">
+                                <input class="login-modal__input" type="password" placeholder="Your password:">
+                            </div>
+                            <button disabled class="btn login-modal__btn" type="submit">
+                                Login
+                            </button>
+                        </form>
+                        <div class="login-modal__close" id="js-login-modal-close">
+                            x
+                        </div>
+                    </div>
+                </div>
+                <!--/login-modal-->
 
                 <!-- Showcase content -->
                 <div class="showcase-content">
@@ -44,9 +65,11 @@
                         <i class="arrow-down"></i>
                     </a>
                 </div>
-            </div><!--/showcase content-->
+            </div>
+            <!--/showcase content-->
 
-        </div><!--/container-->
+        </div>
+        <!--/container-->
 
         <!-- Fixed dots navigation -->
         <div class="fixed">
@@ -57,23 +80,22 @@
                 <a class="dot-link" id="advisors-dot" href="#js-advisors"></a>
                 <a class="dot-link" id="investors-dot" href="#js-investors"></a>
             </div>
-        </div><!--/fixed dots navigation-->
+        </div>
+        <!--/fixed dots navigation-->
 
-    </section><!--/showcase-->
+    </section>
+    <!--/showcase-->
 
     <!-- About Us -->
     <section class="about" id="js-about">
 
         <!-- Container-about -->
         <div class="container--about">
-            <h2 class="about__heading">
+            <h2 class="about__heading heading-line">
                 About Us
             </h2>
         </div>
         <!--/container-about-->
-
-        <!-- Horizontal line -->
-        <div class="horizontal-line--about"></div>
 
         <!-- Container-about -->
         <div class="container--about flex">
@@ -97,26 +119,27 @@
                     <div class="box box--2"></div>
                     <div class="box box--3"></div>
                     <div class="box box--4">
-                        <img src="./images/aboutus1.png" alt="">
+                        <img src="./images/aboutus1.png" alt="about-us">
                     </div>
                 </div>
             </div>
-        </div><!-- /container-about -->
+        </div>
+        <!-- /container-about -->
 
-    </section><!--/about us-->
+    </section>
+    <!--/about us-->
 
     <!-- Portfolio -->
     <section class="portfolio" id="js-portfolio">
 
         <!-- Container -->
         <div class="container">
-            <h2 class="portfolio__heading">
+            <h2 class="portfolio__heading heading-line">
                 Our Portfolio
             </h2>
-        </div><!--/container-->
+        </div>
+        <!--/container-->
 
-        <!-- Horizontal line -->
-        <div class="horizontal-line"></div>
 
         <!-- Portfolio inner content -->
         <div class="portfolio-inner-content">
@@ -125,7 +148,9 @@
                 <!-- Cards -->
                 <div class="cards" id="js-cards">
                     <div class="card">
-                        <img class="card__logo" src="./images/logo2.png" alt="elroy-logo">
+                        <div class="card__logo">
+                            <img src="./images/logo2.png" alt="harpoon-ventures-clients-elroy">
+                        </div>
                         <h4 class="card__title">
                             VTOL autonomous heavy lift drones
                         </h4>
@@ -133,36 +158,42 @@
                             Next generation autonomous Vertical Takeoff and Landing (VTOL) with payloads in excess of 150 lbs and range in excess of
                             300 miles.
                         </p>
-                        <button type="button" class="btn">
+                        <button type="button" class="btn btn--secondary">
                             VIEW MORE
                         </button>
                     </div>
                     <div class="card">
-                        <img class="card__logo" src="./images/logo1.png" alt="elroy-logo">
+                        <div class="card__logo">
+                            <img src="./images/logo1.png" alt="harpoon-ventures-clients-edgybees">
+                        </div>
                         <h4 class="card__title">
                             AR comprehensive situational awareness
                         </h4>
                         <p class="card__paragraph">
                             Augmented Reality (AR) enabled common operation picture with customizable AR layers over full motion video feeds.
                         </p>
-                        <button type="button" class="btn">
+                        <button type="button" class="btn btn--secondary">
                             VIEW MORE
                         </button>
                     </div>
                     <div class="card">
-                        <img class="card__logo" src="./images/logo3.png" alt="elroy-logo">
+                        <div class="card__logo">
+                            <img src="./images/logo3.png" alt="harpoon-ventures-clients-planck">
+                        </div>
                         <h4 class="card__title">
                             Autonomous drones for underway launch & recovery
                         </h4>
                         <p class="card__paragraph">
                             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                         </p>
-                        <button type="button" class="btn">
+                        <button type="button" class="btn btn--secondary">
                             VIEW MORE
                         </button>
                     </div>
                     <div class="card">
-                        <img class="card__logo" src="./images/logo4.png" alt="elroy-logo">
+                        <div class="card__logo">
+                            <img src="./images/logo4.png" alt="harpoon-ventures-clients-lookngglass">
+                        </div>
                         <h4 class="card__title">
                             Real-time mixed reality training
                         </h4>
@@ -170,40 +201,41 @@
                             Augmented Reality (AR) multiplayer games and training scenarios enabling users to seamlessly fuse a digital world with the
                             real world.
                         </p>
-                        <button type="button" class="btn">
+                        <button type="button" class="btn btn--secondary">
                             VIEW MORE
                         </button>
                     </div>
-                </div><!--/cards-->
+                </div>
+                <!--/cards-->
 
-                <h2 class="portfolio__heading portfolio__heading--second">
-                    "This portfolio was constructed in
+                <h2 class="portfolio__heading--second">
+                    " This portfolio was constructed in
                     <br> less than 1 month."
                 </h2>
 
-            </div><!--/container-->
-        </div><!--/portfolio inner content-->
+            </div>
+            <!--/container-->
+        </div>
+        <!--/portfolio inner content-->
 
-    </section><!--/portfolio-->
+    </section>
+    <!--/portfolio-->
 
     <!-- Advisors -->
     <section class="advisors" id="js-advisors">
 
         <!-- Container -->
         <div class="container">
-            <h2 class="advisors__heading advisors__heading--first">
+            <h2 class="advisors__heading advisors__heading--first heading-line heading-line--advisors">
                 Our Advisors
             </h2>
         </div>
         <!--/container-->
 
-        <!-- Horizontal line -->
-        <div class="horizontal-line"></div>
-
         <!-- Container -->
         <div class="container">
             <h2 class="advisors__heading advisors__heading--second">
-                We are seeking advisors who
+                "We are seeking advisors who
                 <br> provide strategic insight...
             </h2>
 
@@ -214,9 +246,9 @@
                         <img src="./images/advisors-img1.png" alt="advisors-img">
                     </div>
                     <div class="text-wrap">
-                        <h4 class="advisors-box__title">
+                        <h3 class="advisors-box__title">
                             David Petraeus
-                        </h4>
+                        </h3>
                         <ul class="advisors__list">
                             <li class="advisors__list-item">
                                 Former Director of CIA
@@ -238,9 +270,9 @@
                         <img src="./images/advisors-img2.png" alt="advisors-img">
                     </div>
                     <div class="text-wrap">
-                        <h4 class="advisors-box__title">
+                        <h3 class="advisors-box__title">
                             Robert Work
-                        </h4>
+                        </h3>
                         <ul class="advisors__list">
                             <li class="advisors__list-item">
                                 Former Deputy Secretary of Defence
@@ -262,9 +294,9 @@
                         <img src="./images/advisors-img3.png" alt="advisors-img">
                     </div>
                     <div class="text-wrap">
-                        <h4 class="advisors-box__title">
+                        <h3 class="advisors-box__title">
                             Michael Hayden
-                        </h4>
+                        </h3>
                         <ul class="advisors__list">
                             <li class="advisors__list-item">
                                 Former Director of CIA
@@ -286,9 +318,9 @@
                         <img src="./images/advisors-img4.png" alt="advisors-img">
                     </div>
                     <div class="text-wrap">
-                        <h4 class="advisors-box__title">
+                        <h3 class="advisors-box__title">
                             Tom Mahnken
-                        </h4>
+                        </h3>
                         <ul class="advisors__list">
                             <li class="advisors__list-item">
                                 Former Dep. Assist. Sec. Defense Policy
@@ -310,9 +342,9 @@
                         <img src="./images/advisors-img5.png" alt="advisors-img">
                     </div>
                     <div class="text-wrap">
-                        <h4 class="advisors-box__title">
+                        <h3 class="advisors-box__title">
                             Michael Hayden
-                        </h4>
+                        </h3>
                         <ul class="advisors__list">
                             <li class="advisors__list-item">
                                 Former Commander of SOCOM
@@ -335,11 +367,14 @@
                         <br> network leverage.
                     </h2>
                 </div>
-            </div><!--/advisors boxes-->
+            </div>
+            <!--/advisors boxes-->
 
-        </div><!--/container-->
+        </div>
+        <!--/container-->
 
-    </section><!--/advisors-->
+    </section>
+    <!--/advisors-->
 
     <!-- Investors -->
     <section class="investors" id="js-investors">
@@ -347,14 +382,12 @@
         <!-- Container -->
         <div class="container">
             <div class="investors-inner-content">
-                <h2 class="investors__heading investors__heading--first">
+                <h2 class="investors__heading investors__heading--first heading-line heading-line--investors">
                     Our Investors
                 </h2>
             </div>
-        </div><!--/container-->
-
-        <!-- Horizontal line -->
-        <div class="horizontal-line"></div>
+        </div>
+        <!--/container-->
 
         <!-- Container -->
         <div class="container">
@@ -381,10 +414,13 @@
                     </div>
                 </div>
 
-            </div><!--/investors inner content-->
-        </div><!--/container-->
+            </div>
+            <!--/investors inner content-->
+        </div>
+        <!--/container-->
 
-    </section><!--/investors-->
+    </section>
+    <!--/investors-->
 
     <!-- Footer -->
     <footer class="footer">

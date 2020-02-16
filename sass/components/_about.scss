@@ -4,28 +4,22 @@
     padding-top: 75px;
     padding-bottom: 120px;
 }
+.about__heading {
+    letter-spacing: 5px;
+}
 .about__heading--second {
     padding-bottom: 20px;
+    letter-spacing: 1px;
 }
 .about__paragraph {
-    font-size: 14px;
+    font-size: 16px;
     font-family: $main_font;
-    width: 95%;
+    width: 100%;
     line-height: 2;
-}
-.horizontal-line {
-    height: 3px;
-    max-width: 33%;
-    background-color: $secondary_color;
-}
-.horizontal-line--about {
-    height: 3px;
-    max-width: 28%;
-    background-color: $secondary_color;
 }
 .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     @media only screen and(max-width: 1200px) {
         flex-direction: column;
@@ -46,6 +40,8 @@
         margin: 120px 0;
      }
 }
+
+
 // Grid from boxes
 .boxes {
     display: grid;
@@ -73,3 +69,4 @@
 .box--3 {
     background-color: transparent;
 }
+
